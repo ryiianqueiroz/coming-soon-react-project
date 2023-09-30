@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.main-text {
+  width: 55%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.main-text .content {
+  max-width: 500px;
+  margin-top: 100px;
+}
+.main-text .content img {
+  width: 200px;
+  margin-bottom: 100px;
+}
+.main-text .content h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.main-text .content h1 .were {
+  color: #c57e8a;
+  font-weight: 300;
+}
+.main-text .content p {
+  color: palevioletred;
+  margin-top: 16px;
+  line-height: 25px;
+}
+.main-text .content .email-content {
+  display: flex;
+  height: 50px;
+  margin-top: 40px;
+}
+.main-text .content .email-content .email-input {
+  width: 80%;
+  border-radius: 15px;
+  border: 1.5px solid pink;
+}
+.main-text .content .email-content .email-input::placeholder {
+  color: #fc94a6;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10px;
+}
+.main-text .content .email-content .email-input:focus {
+  outline: none;
+}
+.main-text .content .email-content button {
+  margin-left: -40px;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 50px;
+  border: none;
+  display: flex;
+  background-color: pink;
+}
+.main-text .content .email-content button img {
+  width: 30px;
+  height: 30px;
+  margin-top: -10px;
+}
+
+.bg-image {
+  width: 45%;
+}
+.bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bg-image .bg-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-text {
+    width: 55%;
+  }
+  .main-text .content {
+    max-width: 320px;
+    margin-top: 100px;
+  }
+  .main-text .content img {
+    width: 150px;
+    margin-bottom: 100px;
+  }
+  .main-text .content h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .main-text .content h1 .were {
+    color: #c57e8a;
+    font-weight: 300;
+  }
+  .main-text .content p {
+    margin-top: 16px;
+    line-height: 25px;
+    font-size: 13px;
+  }
+  .main-text .content .email-content {
+    display: flex;
+    height: 50px;
+    margin-top: 40px;
+  }
+  .main-text .content .email-content .email-input {
+    width: 100%;
+    border-radius: 15px;
+    border: 1.5px solid pink;
+  }
+  .main-text .content .email-content .email-input::placeholder {
+    color: #fc94a6;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .main-text .content .email-content .email-input:focus {
+    outline: none;
+  }
+  .main-text .content .email-content button {
+    margin-left: -40px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    background-color: pink;
+  }
+  .main-text .content .email-content button img {
+    width: 25px;
+    height: 25px;
+    margin-top: -8px;
+  }
+
+  .bg-image {
+    width: 45%;
+  }
+  .bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 768px) {
+  .App {
+    flex-direction: column-reverse;
+  }
+
+  .main-text {
+    width: 100%;
+  }
+  .main-text .content {
+    max-width: 400px;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .main-text .content .logo-image {
+    width: 100%;
+    height: 110px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+  }
+  .main-text .content .logo-image img {
+    width: 150px;
+    margin: 40px;
+  }
+  .main-text .content h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 20px;
+  }
+  .main-text .content h1 .were {
+    color: #c57e8a;
+    font-weight: 300;
+  }
+  .main-text .content p {
+    margin-top: 16px;
+    line-height: 25px;
+    font-size: 15px;
+  }
+  .main-text .content .email-content {
+    display: flex;
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom: 150px;
+  }
+  .main-text .content .email-content .email-input {
+    width: 100%;
+    border-radius: 15px;
+    border: 1.5px solid pink;
+  }
+  .main-text .content .email-content .email-input::placeholder {
+    color: #fc94a6;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .main-text .content .email-content .email-input:focus {
+    outline: none;
+  }
+  .main-text .content .email-content button {
+    margin-left: -40px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    background-color: pink;
+  }
+  .main-text .content .email-content button img {
+    width: 25px;
+    height: 25px;
+    margin-top: -8px;
+  }
+
+  .bg-image {
+    width: 100%;
+  }
+  .bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .bg-image .bg-desktop {
+    display: none;
+  }
+  .bg-image .bg-mobile {
+    display: flex;
+    margin-top: 110px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .App {
+    flex-direction: column-reverse;
+  }
+
+  .main-text .content {
+    max-width: 300px;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .main-text .content .logo-image {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+  }
+  .main-text .content .logo-image img {
+    width: 130px;
+    height: 30px;
+    margin: 31px;
+    margin-left: 25px;
+  }
+  .main-text .content h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 20px;
+    margin-top: -30px;
+  }
+  .main-text .content h1 .were {
+    color: #c57e8a;
+    font-weight: 300;
+  }
+  .main-text .content p {
+    margin-top: 26px;
+    line-height: 25px;
+    font-size: 13px;
+  }
+  .main-text .content .email-content {
+    display: flex;
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom: 120px;
+  }
+  .main-text .content .email-content .email-input {
+    width: 100%;
+    border-radius: 15px;
+    border: 1.5px solid pink;
+  }
+  .main-text .content .email-content .email-input::placeholder {
+    color: #fc94a6;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .main-text .content .email-content .email-input:focus {
+    outline: none;
+  }
+  .main-text .content .email-content button {
+    margin-left: -40px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    background-color: pink;
+  }
+  .main-text .content .email-content button img {
+    width: 25px;
+    height: 25px;
+    margin-top: -8px;
+  }
+
+  .bg-image {
+    width: 100%;
+  }
+  .bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .bg-image .bg-desktop {
+    display: none;
+  }
+  .bg-image .bg-mobile {
+    display: flex;
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main-text .content {
+    max-width: 250px;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .main-text .content .logo-image {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+  }
+  .main-text .content .logo-image img {
+    width: 130px;
+    height: 30px;
+    margin: 31px;
+    margin-left: 25px;
+  }
+  .main-text .content h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 15px;
+    margin-top: -30px;
+  }
+  .main-text .content h1 .were {
+    color: #c57e8a;
+    font-weight: 300;
+  }
+  .main-text .content p {
+    margin-top: 26px;
+    line-height: 20px;
+    font-size: 11px;
+  }
+  .main-text .content .email-content {
+    display: flex;
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom: 120px;
+  }
+  .main-text .content .email-content .email-input {
+    width: 100%;
+    border-radius: 15px;
+    border: 1.5px solid pink;
+  }
+  .main-text .content .email-content .email-input::placeholder {
+    color: #fc94a6;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .main-text .content .email-content .email-input:focus {
+    outline: none;
+  }
+  .main-text .content .email-content button {
+    margin-left: -40px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    background-color: pink;
+  }
+  .main-text .content .email-content button img {
+    width: 25px;
+    height: 25px;
+    margin-top: -8px;
+  }
+
+  .bg-image {
+    width: 100%;
+  }
+  .bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .bg-image .bg-desktop {
+    display: none;
+  }
+  .bg-image .bg-mobile {
+    display: flex;
+    margin-top: 90px;
+    min-height: 200px;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */
